@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 import com.educandoweb.course.entities.Order;
 import com.educandoweb.course.repositories.OrderRepository;
 
-@Service	//regista a string e assim via poder ser injetado automaticamente
+@Service
 public class OrderService {
 
 	@Autowired
 	private OrderRepository repository;
 
-	public List<Order> findAll(){
+	public List<Order> findAll() {
 		return repository.findAll();
 	}
 
